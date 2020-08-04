@@ -12,7 +12,7 @@ class WebLinkTest {
 	@Test
 	void testIsKidFriendlyEligable() {
 		//test1: porn in URL-- false
-		Weblink weblink = BookmarkManager.getInstance().createWeblink(2000, "Taming Tiger , Part 2",
+		Weblink weblink = BookmarkManager.getInstance().createWebLink(2000, "Taming Tiger , Part 2",
 				"http://www.javaworld.com/article/2072759/core-java/taming-porn--part-2.html",
 				"http://www.javaworld.com");
 		
@@ -22,7 +22,7 @@ class WebLinkTest {
 		
 		//test2: porn in title-- false 
 		 
-		weblink = BookmarkManager.getInstance().createWeblink(2000, "Taming porn , Part 2",
+		weblink = BookmarkManager.getInstance().createWebLink(2000, "Taming porn , Part 2",
 				"http://www.javaworld.com/article/2072759/core-java/taming-tiger--part-2.html",
 				"http://www.javaworld.com");
 		
@@ -32,7 +32,7 @@ class WebLinkTest {
 		
 		
 		//test3: adult in host -- false
-		weblink = BookmarkManager.getInstance().createWeblink(2000, "Taming Tiger , Part 2",
+		weblink = BookmarkManager.getInstance().createWebLink(2000, "Taming Tiger , Part 2",
 				"http://www.javaworld.com/article/2072759/core-java/taming-tiger--part-2.html",
 				"http://www.adultjavaworld.com");
 		
@@ -44,7 +44,7 @@ class WebLinkTest {
 		
 		//test4: adult in URL but not in host -- true
 		
-		weblink = BookmarkManager.getInstance().createWeblink(2000, "Taming Tiger , Part 2",
+		weblink = BookmarkManager.getInstance().createWebLink(2000, "Taming Tiger , Part 2",
 				"http://www.adultjavaworld.com/article/2072759/core-java/taming-tiger--part-2.html",
 				"http://www.javaworld.com");
 		
@@ -54,7 +54,7 @@ class WebLinkTest {
 		
 		//test5: adult in Title only -- true
 		
-		weblink = BookmarkManager.getInstance().createWeblink(2000, "Taming adult Tiger , Part 2",
+		weblink = BookmarkManager.getInstance().createWebLink(2000, "Taming adult Tiger , Part 2",
 				"http://www.javaworld.com/article/2072759/core-java/taming-tiger--part-2.html",
 				"http://www.javaworld.com");
 		

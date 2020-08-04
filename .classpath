@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="thrillio/src"/>
+	<classpathentry kind="src" path="thrillio/Test"/>
+	<classpathentry kind="lib" path="C:/Users/markt/eclipse-workspace/commons-lang3-3.10/commons-lang3-3.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/markt/eclipse-workspace/commons-lang3-3.10/commons-lang3-3.10-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/markt/eclipse-workspace/commons-lang3-3.10/commons-lang3-3.10-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/markt/eclipse-workspace/commons-lang3-3.10/commons-lang3-3.10-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/markt/eclipse-workspace/commons-lang3-3.10/commons-lang3-3.10-test-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="thrillio/bin"/>
+</classpath>
